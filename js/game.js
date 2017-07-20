@@ -61,6 +61,7 @@ window.onload = function () {
         downKey = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
 
         upKey = game.input.keyboard.addKey(Phaser.Keyboard.UP);
+		this.game.input.mousePointer.rightButton.onDown.add(this.onRightDown, this)
     }
 
     function start() {
