@@ -61,6 +61,9 @@ window.onload = function () {
         downKey = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
 
         upKey = game.input.keyboard.addKey(Phaser.Keyboard.UP);
+		game.canvas.oncontextmenu = function (e) { e.preventDefault(); }
+
+
 		this.game.input.mousePointer.rightButton.onDown.add(this.onRightDown, this)
     }
 
